@@ -73,6 +73,11 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
   transition: color 0.15s;
 }
 .nav-links a:hover { color: var(--ink); }
+.nav-links a.active {
+  color: var(--ink);
+  border-bottom: 2px solid var(--red);
+  padding-bottom: 2px;
+}
 .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--ink); }
 
 /* ── HERO ────────────────────────────────────────────── */
