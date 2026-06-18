@@ -300,20 +300,24 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
 .explore-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1px;
-  background: rgba(0,0,0,0.15);
+  gap: 12px;
 }
 .explore-card {
-  background: rgba(0,0,0,0.2);
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 4px;
   padding: 30px 26px;
   transition: background 0.15s;
 }
-.explore-card:hover { background: rgba(0,0,0,0.3); }
+.explore-card:hover { background: rgba(255,255,255,0.1); }
 .explore-card h3 { color: rgba(245,242,238,0.95); font-weight: 500; }
-.explore-card p { font-size: 0.86rem; color: rgba(245,242,238,0.5); line-height: 1.75; margin-top: 8px; }
+.explore-card p { font-size: 0.86rem; color: rgba(245,242,238,0.55); line-height: 1.75; margin-top: 8px; }
 
-.explore-card--lead { background: rgba(0,0,0,0.35); }
-.explore-card--lead:hover { background: rgba(0,0,0,0.45); }
+.explore-card--lead {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.18);
+}
+.explore-card--lead:hover { background: rgba(255,255,255,0.14); }
 .explore-card--lead h3 { color: var(--white); font-weight: 700; }
 .explore-card--lead p { color: rgba(245,242,238,0.65); }
 .explore-freq {
