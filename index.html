@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Joshua's Coffee Shop — Sturminster Newton</title>
+  <title>Joshua's Coffee Shop — Sturminster Newton, Dorset</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
   <!-- NAV -->
   <header id="nav">
     <div class="nav-inner">
-      <span class="nav-mark">Joshua's</span>
+      <span class="nav-wordmark">Joshua's</span>
       <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
       <nav class="nav-links">
         <a href="#menu">Menu</a>
@@ -27,39 +27,37 @@
 
   <!-- HERO -->
   <section id="hero">
-    <div class="hero-top">
-      <p class="hero-place">Sturminster Newton &middot; Dorset</p>
-      <h1 class="hero-title">Joshua's</h1>
-      <p class="hero-sub">Coffee <em>Shop</em></p>
-      <div class="hero-pills">
-        <span class="pill pill--amber">★ Award-Winning Coffee</span>
-        <span class="pill">Free WiFi</span>
-        <span class="pill">Fresh Light Lunches</span>
-      </div>
-      <a href="#menu" class="hero-cta">See the menu</a>
+    <div class="hero-photo-side">
+      <img src="cafe.jpg" alt="Inside Joshua's Coffee Shop — the red sofa and warm lights" />
     </div>
-    <div class="hero-photo-wrap">
-      <img src="cafe.jpg" alt="Inside Joshua's Coffee Shop" class="hero-photo" />
-      <div class="hero-photo-caption">The café — come as you are</div>
+    <div class="hero-text-side">
+      <div class="hero-text-inner">
+        <p class="hero-location">Sturminster Newton &middot; Dorset</p>
+        <h1>Joshua's<br/>Coffee<br/>Shop</h1>
+        <p class="hero-desc">Award-winning coffee, fresh light lunches, and a seat that's yours for as long as you need it.</p>
+        <div class="hero-tags">
+          <span>★ Award-winning coffee</span>
+          <span>Free WiFi</span>
+          <span>Fresh light lunches</span>
+        </div>
+        <a href="#menu" class="hero-btn">See the menu</a>
+      </div>
     </div>
   </section>
 
   <!-- MENU -->
   <section id="menu">
     <div class="container">
-      <div class="section-head section-head--light">
-        <p class="eyebrow">What we serve</p>
+      <div class="section-head section-head--menu">
+        <p class="label label--amber">What we serve</p>
         <h2>The Menu</h2>
-        <p class="section-desc">Decaffeinated coffee &amp; tea always available. Alternative milks (oat, almond, soy, coconut) add 55p.</p>
+        <p class="section-note">Decaffeinated coffee &amp; tea always available. Alternative milks — oat, almond, soy, coconut — add 55p.</p>
       </div>
 
       <div class="menu-cols">
-
         <div class="menu-group">
-          <h3 class="menu-group-title">Hot Drinks</h3>
-          <div class="menu-row menu-row--header">
-            <span></span><span>Reg</span><span>Lge</span>
-          </div>
+          <h3 class="menu-cat">Hot drinks</h3>
+          <div class="menu-row menu-row--hdr"><span></span><span>Reg</span><span>Lge</span></div>
           <div class="menu-row"><span>Flat White</span><span>£3.00</span><span>£3.30</span></div>
           <div class="menu-row"><span>Cappuccino</span><span>£3.00</span><span>£3.30</span></div>
           <div class="menu-row"><span>Caffè Latte</span><span>£3.00</span><span>£3.30</span></div>
@@ -70,74 +68,68 @@
           <div class="menu-row"><span>Hot Chocolate</span><span>£3.00</span><span>£3.50</span></div>
           <div class="menu-row"><span>Hot Choc + Cream &amp; Marshmallows</span><span>£3.50</span><span>£4.00</span></div>
           <div class="menu-row"><span>Chocolate Melt <em>(Dark, White or Milk)</em></span><span>£3.20</span><span>£3.60</span></div>
-          <div class="menu-row"><span>Pot of Afternoon Tea</span><span>£2.10</span><span>—</span></div>
+          <div class="menu-row"><span>Afternoon Tea</span><span>£2.10</span><span>—</span></div>
           <div class="menu-row"><span>Other Teas</span><span>£2.25</span><span>—</span></div>
           <div class="menu-row"><span>Chai Latte</span><span>£3.00</span><span>£3.30</span></div>
         </div>
 
         <div class="menu-group">
-          <h3 class="menu-group-title">Cold Drinks</h3>
-          <div class="menu-row menu-row--single"><span>Pure Orange Juice</span><span>£2.50</span></div>
-          <div class="menu-row menu-row--single"><span>Cloudy Apple Juice</span><span>£2.50</span></div>
-          <div class="menu-row menu-row--single"><span>Traditional Pink Lemonade</span><span>£2.50</span></div>
-          <div class="menu-row menu-row--single"><span>San Pellegrino Blood Orange</span><span>£2.60</span></div>
-          <div class="menu-row menu-row--single"><span>Mineral or Sparkling Water</span><span>£1.80</span></div>
-          <div class="menu-row menu-row--single"><span>Sparkling Elderflower</span><span>£2.70</span></div>
-          <div class="menu-row menu-row--single"><span>Sparkling Ginger Beer</span><span>£2.70</span></div>
-          <div class="menu-row menu-row--single"><span>Sparkling Lemon &amp; Mint</span><span>£2.70</span></div>
-          <div class="menu-row menu-row--single"><span>Sparkling Apple &amp; Rhubarb</span><span>£2.70</span></div>
-          <div class="menu-row menu-row--single"><span>Coca Cola</span><span>£2.00</span></div>
-          <div class="menu-row menu-row--single"><span>Ice Cream Milkshake <em>(Choc, Strawberry or Honeycomb)</em></span><span>£3.50</span></div>
+          <h3 class="menu-cat">Cold drinks</h3>
+          <div class="menu-row menu-row--2"><span>Pure Orange Juice</span><span>£2.50</span></div>
+          <div class="menu-row menu-row--2"><span>Cloudy Apple Juice</span><span>£2.50</span></div>
+          <div class="menu-row menu-row--2"><span>Traditional Pink Lemonade</span><span>£2.50</span></div>
+          <div class="menu-row menu-row--2"><span>San Pellegrino Blood Orange</span><span>£2.60</span></div>
+          <div class="menu-row menu-row--2"><span>Mineral or Sparkling Water</span><span>£1.80</span></div>
+          <div class="menu-row menu-row--2"><span>Sparkling Elderflower</span><span>£2.70</span></div>
+          <div class="menu-row menu-row--2"><span>Sparkling Ginger Beer</span><span>£2.70</span></div>
+          <div class="menu-row menu-row--2"><span>Sparkling Lemon &amp; Mint</span><span>£2.70</span></div>
+          <div class="menu-row menu-row--2"><span>Sparkling Apple &amp; Rhubarb</span><span>£2.70</span></div>
+          <div class="menu-row menu-row--2"><span>Coca Cola</span><span>£2.00</span></div>
+          <div class="menu-row menu-row--2"><span>Ice Cream Milkshake <em>(Choc, Strawberry or Honeycomb)</em></span><span>£3.50</span></div>
 
-          <h3 class="menu-group-title" style="margin-top:2rem">Little Drinks</h3>
-          <div class="menu-row menu-row--single"><span>Pure Orange Juice</span><span>£2.50</span></div>
-          <div class="menu-row menu-row--single"><span>Cloudy Apple Juice</span><span>£2.50</span></div>
-          <div class="menu-row menu-row--single"><span>Babycino</span><span>£1.60</span></div>
-          <div class="menu-row menu-row--single"><span>Glass of Milk</span><span>£1.50</span></div>
+          <h3 class="menu-cat" style="margin-top:2rem">Little drinks</h3>
+          <div class="menu-row menu-row--2"><span>Pure Orange Juice</span><span>£2.50</span></div>
+          <div class="menu-row menu-row--2"><span>Cloudy Apple Juice</span><span>£2.50</span></div>
+          <div class="menu-row menu-row--2"><span>Babycino</span><span>£1.60</span></div>
+          <div class="menu-row menu-row--2"><span>Glass of Milk</span><span>£1.50</span></div>
 
-          <h3 class="menu-group-title" style="margin-top:2rem">Extras</h3>
-          <div class="menu-row menu-row--single"><span>Alternative Milk</span><span>55p</span></div>
-          <div class="menu-row menu-row--single"><span>Extra Espresso Shot</span><span>45p</span></div>
-          <div class="menu-row menu-row--single"><span>Pouring Cream</span><span>25p</span></div>
-          <div class="menu-row menu-row--single"><span>Flavoured Syrups</span><span>45p</span></div>
+          <h3 class="menu-cat" style="margin-top:2rem">Extras</h3>
+          <div class="menu-row menu-row--2"><span>Alternative Milk</span><span>55p</span></div>
+          <div class="menu-row menu-row--2"><span>Extra Espresso Shot</span><span>45p</span></div>
+          <div class="menu-row menu-row--2"><span>Pouring Cream</span><span>25p</span></div>
+          <div class="menu-row menu-row--2"><span>Flavoured Syrups</span><span>45p</span></div>
         </div>
-
       </div>
 
-      <div class="food-banner">
-        <div class="food-banner-text">
-          <p class="eyebrow eyebrow--amber">Fresh daily</p>
-          <p class="food-banner-headline">Light lunches made in&#8209;house every day.</p>
-          <p>Ask at the counter for today's specials — they go fast.</p>
-        </div>
+      <div class="food-strip">
+        <p class="label label--amber">Fresh daily</p>
+        <p class="food-strip-line">Light lunches made in-house every morning — ask at the counter for today's.</p>
       </div>
 
       <div class="menu-img-wrap">
-        <p class="eyebrow" style="text-align:center;margin-bottom:1rem">Full menu card</p>
-        <img src="menu.png" alt="Joshua's Coffee Shop full printed menu" />
+        <p class="label" style="text-align:center;margin-bottom:1rem">Full menu card</p>
+        <img src="menu.png" alt="Joshua's Coffee Shop printed menu" />
       </div>
     </div>
   </section>
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="container about-inner">
-      <div class="about-text">
-        <p class="eyebrow eyebrow--forest">About</p>
-        <h2>A proper<br/><em>independent café</em></h2>
-        <p>Joshua's is an independent coffee shop in the heart of Sturminster Newton — a place built around good coffee, honest food, and the kind of welcome you only get somewhere that's genuinely part of its community.</p>
-        <p>We take our coffee seriously (award-winning seriously), our lunches are made fresh every day, and there's always a seat and free WiFi if you need to stay a while.</p>
-        <ul class="about-facts">
-          <li><span class="fact-mark">★</span> Award-winning coffee</li>
-          <li><span class="fact-mark">&#8700;</span> Free WiFi throughout</li>
-          <li><span class="fact-mark">&#8700;</span> Fresh light lunches daily</li>
-          <li><span class="fact-mark">&#8700;</span> Independent &amp; family run</li>
+    <div class="container about-grid">
+      <div class="about-copy">
+        <p class="label">About</p>
+        <h2>A proper independent, in the middle of Dorset</h2>
+        <p>Joshua's has been part of Sturminster Newton for years — a genuinely independent café run by people who care about the coffee, the food, and the people who come through the door.</p>
+        <p>We take the coffee seriously. We make the food fresh every day. And we've got comfortable seats and fast, free WiFi if you need to stay a while.</p>
+        <ul class="about-list">
+          <li><span class="mark">★</span>Award-winning coffee</li>
+          <li><span class="mark">→</span>Free WiFi throughout</li>
+          <li><span class="mark">→</span>Fresh light lunches daily</li>
+          <li><span class="mark">→</span>Independent &amp; community-minded</li>
         </ul>
       </div>
-      <div class="about-sofa">
-        <div class="sofa-card">
-          <img src="cafe.jpg" alt="The interior of Joshua's Coffee Shop" />
-        </div>
+      <div class="about-img">
+        <img src="cafe.jpg" alt="The interior of Joshua's — warm lights and the red sofa" />
       </div>
     </div>
   </section>
@@ -146,47 +138,47 @@
   <section id="explore">
     <div class="container">
       <div class="section-head">
-        <p class="eyebrow eyebrow--amber">While you're here</p>
+        <p class="label label--light">While you're here</p>
         <h2>Sturminster Newton</h2>
-        <p class="section-desc">A Dorset market town with more going on than you might expect.</p>
+        <p class="section-note section-note--light">A Dorset market town with more going on than most people expect.</p>
       </div>
       <div class="explore-grid">
-        <div class="explore-card explore-card--featured">
-          <p class="explore-label">Every first Saturday</p>
+        <article class="explore-card explore-card--lead">
+          <p class="explore-freq">Every first Saturday</p>
           <h3>Classic Car Show</h3>
-          <p>On the first Saturday of every month, Sturminster Newton fills up with beautifully restored classic cars from across the decades. It's completely free to attend and a brilliant reason to make a morning of it — pop in for a coffee first.</p>
-        </div>
-        <div class="explore-card">
-          <h3>The Old Mill</h3>
-          <p>A working watermill on the River Stour, one of Dorset's finest heritage sites. Open seasonally with milling demonstrations.</p>
-        </div>
-        <div class="explore-card">
-          <h3>Monday Market</h3>
-          <p>A centuries-old tradition in the market square — local produce, crafts, and familiar faces every Monday.</p>
-        </div>
-        <div class="explore-card">
+          <p>The town fills with beautifully restored vehicles from across the decades — completely free to attend. Make a morning of it: coffee at ours first, then a wander through the cars.</p>
+        </article>
+        <article class="explore-card">
+          <h3>Sturminster Newton Mill</h3>
+          <p>A working watermill on the River Stour, one of the finest heritage sites in Dorset. Open seasonally with milling demonstrations.</p>
+        </article>
+        <article class="explore-card">
+          <h3>The Monday Market</h3>
+          <p>Centuries old and still going — local produce, crafts, and familiar faces in the market square every Monday.</p>
+        </article>
+        <article class="explore-card">
           <h3>River Stour Walks</h3>
-          <p>Step out from the town onto miles of footpaths through the Blackmore Vale. The Stour valley is as good as Dorset gets.</p>
-        </div>
-        <div class="explore-card">
-          <h3>Thomas Hardy's Home</h3>
-          <p>Hardy lived here from 1876–78, calling it some of his happiest years. His former home is preserved as a local landmark.</p>
-        </div>
-        <div class="explore-card">
-          <h3>Cheese Festival &amp; More</h3>
-          <p>The town's calendar includes the famous Cheese Festival plus seasonal fairs, live music, and community events year-round.</p>
-        </div>
+          <p>Step out of town onto footpaths through the Blackmore Vale. Some of the best walking in Dorset, starting right here.</p>
+        </article>
+        <article class="explore-card">
+          <h3>Thomas Hardy's House</h3>
+          <p>Hardy lived and wrote here from 1876–78. His former home is preserved and open as a local landmark.</p>
+        </article>
+        <article class="explore-card">
+          <h3>Year-round events</h3>
+          <p>From the Cheese Festival to seasonal fairs and live music — Sturminster Newton's calendar stays busy throughout the year.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- VISIT -->
   <section id="visit">
-    <div class="container visit-inner">
+    <div class="container visit-grid">
       <div>
-        <p class="eyebrow eyebrow--amber">Opening Hours</p>
+        <p class="label">Opening hours</p>
         <h2>Come and see us</h2>
-        <table class="hours-table">
+        <table class="hours">
           <tr><td>Monday</td><td>Please call ahead</td></tr>
           <tr><td>Tuesday</td><td>Please call ahead</td></tr>
           <tr><td>Wednesday</td><td>Please call ahead</td></tr>
@@ -195,18 +187,18 @@
           <tr><td>Saturday</td><td>Please call ahead</td></tr>
           <tr><td>Sunday</td><td>Please call ahead</td></tr>
         </table>
-        <p class="hours-note">For confirmed hours check our website or give us a call.</p>
+        <p class="hours-note">For confirmed times check our website or give us a call.</p>
       </div>
-      <div class="contact-block">
-        <p class="eyebrow eyebrow--amber">Find us</p>
+      <div>
+        <p class="label">Find us</p>
         <h2>Get in touch</h2>
-        <ul class="contact-list">
+        <ul class="contact">
           <li>
             <span class="contact-label">Address</span>
             <span>Joshua's Coffee Shop<br/>Sturminster Newton, Dorset</span>
           </li>
           <li>
-            <span class="contact-label">Website</span>
+            <span class="contact-label">Online</span>
             <span><a href="https://joshuascoffeeshop.co.uk" target="_blank" rel="noopener">joshuascoffeeshop.co.uk</a></span>
           </li>
           <li>
@@ -219,23 +211,19 @@
   </section>
 
   <!-- MAP -->
-  <div class="map-section">
+  <div class="map-wrap">
     <iframe
-      title="Joshua's Coffee Shop, Sturminster Newton"
+      title="Joshua's Coffee Shop location in Sturminster Newton"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.8!2d-2.3063!3d50.9268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4872b20000000001%3A0x1!2sSturminster%20Newton%2C%20Dorset%20DT10!5e0!3m2!1sen!2suk!4v1"
-      width="100%"
-      height="420"
-      style="border:0;display:block;"
-      allowfullscreen=""
-      loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade">
+      width="100%" height="400" style="border:0;display:block;"
+      allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
 
   <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
-      <div>
+      <div class="footer-brand">
         <p class="footer-name">Joshua's Coffee Shop</p>
         <p>Sturminster Newton &middot; Dorset</p>
       </div>
