@@ -3,7 +3,7 @@ const toggle = document.querySelector('.nav-toggle');
 const links = document.querySelector('.nav-links');
 
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
+  nav.classList.toggle('solid', window.scrollY > 60);
 }, { passive: true });
 
 toggle.addEventListener('click', () => links.classList.toggle('open'));

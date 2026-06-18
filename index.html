@@ -6,7 +6,7 @@
   <title>Joshua's Coffee Shop — Sturminster Newton, Dorset</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,7 +14,7 @@
   <!-- NAV -->
   <header id="nav">
     <div class="nav-inner">
-      <span class="nav-wordmark">Joshua's</span>
+      <a class="nav-logo" href="#top">Joshua's</a>
       <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
       <nav class="nav-links">
         <a href="#menu">Menu</a>
@@ -26,32 +26,41 @@
   </header>
 
   <!-- HERO -->
-  <section id="hero">
-    <div class="hero-photo-side">
-      <img src="cafe.jpg" alt="Inside Joshua's Coffee Shop — the red sofa and warm lights" />
+  <section id="top">
+    <div class="hero-photo">
+      <img src="cafe.jpg" alt="Inside Joshua's Coffee Shop — Sturminster Newton" />
     </div>
-    <div class="hero-text-side">
-      <div class="hero-text-inner">
-        <p class="hero-location">Sturminster Newton &middot; Dorset</p>
-        <h1>Joshua's<br/>Coffee<br/>Shop</h1>
-        <p class="hero-desc">Award-winning coffee, fresh light lunches, and a seat that's yours for as long as you need it.</p>
-        <div class="hero-tags">
-          <span>★ Award-winning coffee</span>
-          <span>Free WiFi</span>
-          <span>Fresh light lunches</span>
-        </div>
-        <a href="#menu" class="hero-btn">See the menu</a>
+    <div class="hero-caption container">
+      <div class="hero-caption-left">
+        <h1>Joshua's Coffee Shop</h1>
+        <p>Sturminster Newton &middot; Dorset</p>
       </div>
+      <a href="#menu" class="hero-caption-cta">See the menu &darr;</a>
     </div>
   </section>
+
+  <!-- STRIP -->
+  <div class="strip">
+    <div class="container strip-inner">
+      <span>★ Award-winning coffee</span>
+      <span class="strip-dot"></span>
+      <span>Fresh light lunches</span>
+      <span class="strip-dot"></span>
+      <span>Free WiFi</span>
+      <span class="strip-dot"></span>
+      <span>Independent café</span>
+    </div>
+  </div>
 
   <!-- MENU -->
   <section id="menu">
     <div class="container">
-      <div class="section-head section-head--menu">
-        <p class="label label--amber">What we serve</p>
-        <h2>The Menu</h2>
-        <p class="section-note">Decaffeinated coffee &amp; tea always available. Alternative milks — oat, almond, soy, coconut — add 55p.</p>
+      <div class="menu-head">
+        <div>
+          <p class="kicker">What we serve</p>
+          <h2>The menu</h2>
+        </div>
+        <p class="menu-note">Decaffeinated coffee &amp; tea always available.<br/>Alternative milks add 55p.</p>
       </div>
 
       <div class="menu-cols">
@@ -85,15 +94,15 @@
           <div class="menu-row menu-row--2"><span>Sparkling Lemon &amp; Mint</span><span>£2.70</span></div>
           <div class="menu-row menu-row--2"><span>Sparkling Apple &amp; Rhubarb</span><span>£2.70</span></div>
           <div class="menu-row menu-row--2"><span>Coca Cola</span><span>£2.00</span></div>
-          <div class="menu-row menu-row--2"><span>Ice Cream Milkshake <em>(Choc, Strawberry or Honeycomb)</em></span><span>£3.50</span></div>
+          <div class="menu-row menu-row--2"><span>Ice Cream Milkshake <em>(Choc, Strawberry, Honeycomb)</em></span><span>£3.50</span></div>
 
-          <h3 class="menu-cat" style="margin-top:2rem">Little drinks</h3>
+          <h3 class="menu-cat" style="margin-top:2.5rem">Little drinks</h3>
           <div class="menu-row menu-row--2"><span>Pure Orange Juice</span><span>£2.50</span></div>
           <div class="menu-row menu-row--2"><span>Cloudy Apple Juice</span><span>£2.50</span></div>
           <div class="menu-row menu-row--2"><span>Babycino</span><span>£1.60</span></div>
           <div class="menu-row menu-row--2"><span>Glass of Milk</span><span>£1.50</span></div>
 
-          <h3 class="menu-cat" style="margin-top:2rem">Extras</h3>
+          <h3 class="menu-cat" style="margin-top:2.5rem">Extras</h3>
           <div class="menu-row menu-row--2"><span>Alternative Milk</span><span>55p</span></div>
           <div class="menu-row menu-row--2"><span>Extra Espresso Shot</span><span>45p</span></div>
           <div class="menu-row menu-row--2"><span>Pouring Cream</span><span>25p</span></div>
@@ -101,14 +110,16 @@
         </div>
       </div>
 
-      <div class="food-strip">
-        <p class="label label--amber">Fresh daily</p>
-        <p class="food-strip-line">Light lunches made in-house every morning — ask at the counter for today's.</p>
+      <div class="food-callout">
+        <div>
+          <p class="kicker">Food</p>
+          <p class="food-line">Fresh light lunches made in-house every day — ask at the counter for today's specials.</p>
+        </div>
       </div>
 
-      <div class="menu-img-wrap">
-        <p class="label" style="text-align:center;margin-bottom:1rem">Full menu card</p>
-        <img src="menu.png" alt="Joshua's Coffee Shop printed menu" />
+      <div class="menu-card-wrap">
+        <p class="kicker" style="margin-bottom:1rem">Full printed menu</p>
+        <img src="menu.png" alt="Joshua's Coffee Shop printed menu card" class="menu-card-img" />
       </div>
     </div>
   </section>
@@ -116,20 +127,28 @@
   <!-- ABOUT -->
   <section id="about">
     <div class="container about-grid">
-      <div class="about-copy">
-        <p class="label">About</p>
-        <h2>A proper independent, in the middle of Dorset</h2>
-        <p>Joshua's has been part of Sturminster Newton for years — a genuinely independent café run by people who care about the coffee, the food, and the people who come through the door.</p>
-        <p>We take the coffee seriously. We make the food fresh every day. And we've got comfortable seats and fast, free WiFi if you need to stay a while.</p>
-        <ul class="about-list">
-          <li><span class="mark">★</span>Award-winning coffee</li>
-          <li><span class="mark">→</span>Free WiFi throughout</li>
-          <li><span class="mark">→</span>Fresh light lunches daily</li>
-          <li><span class="mark">→</span>Independent &amp; community-minded</li>
-        </ul>
+      <div class="about-text">
+        <p class="kicker">About us</p>
+        <h2>An independent in the heart of Dorset</h2>
+        <p>Joshua's has been part of Sturminster Newton for years. We're genuinely independent — run by people who care about getting the coffee right, making the food fresh each morning, and keeping the welcome warm.</p>
+        <p>Pull up a seat. Stay as long as you like. The WiFi is free.</p>
+        <div class="about-facts">
+          <div class="fact">
+            <strong>★ Award-winning</strong>
+            <span>Recognised for coffee quality</span>
+          </div>
+          <div class="fact">
+            <strong>Fresh daily</strong>
+            <span>Lunches made in-house every morning</span>
+          </div>
+          <div class="fact">
+            <strong>Free WiFi</strong>
+            <span>Fast and free throughout the café</span>
+          </div>
+        </div>
       </div>
-      <div class="about-img">
-        <img src="cafe.jpg" alt="The interior of Joshua's — warm lights and the red sofa" />
+      <div class="about-photo">
+        <img src="cafe.jpg" alt="The interior of Joshua's — red sofa, Edison lights, wooden tables" />
       </div>
     </div>
   </section>
@@ -137,36 +156,36 @@
   <!-- EXPLORE -->
   <section id="explore">
     <div class="container">
-      <div class="section-head">
-        <p class="label label--light">While you're here</p>
+      <div class="explore-head">
+        <p class="kicker kicker--light">While you're here</p>
         <h2>Sturminster Newton</h2>
-        <p class="section-note section-note--light">A Dorset market town with more going on than most people expect.</p>
+        <p class="explore-sub">A proper Dorset market town — quieter than it deserves to be.</p>
       </div>
       <div class="explore-grid">
         <article class="explore-card explore-card--lead">
-          <p class="explore-freq">Every first Saturday</p>
+          <p class="explore-freq">Every first Saturday of the month</p>
           <h3>Classic Car Show</h3>
-          <p>The town fills with beautifully restored vehicles from across the decades — completely free to attend. Make a morning of it: coffee at ours first, then a wander through the cars.</p>
+          <p>The town fills up with beautifully restored vehicles from across the decades — free to attend, always worth a walk round. Come for coffee first, then wander the cars.</p>
         </article>
         <article class="explore-card">
           <h3>Sturminster Newton Mill</h3>
-          <p>A working watermill on the River Stour, one of the finest heritage sites in Dorset. Open seasonally with milling demonstrations.</p>
+          <p>A working watermill on the River Stour — one of the finest heritage sites in Dorset. Open seasonally with milling demonstrations.</p>
         </article>
         <article class="explore-card">
           <h3>The Monday Market</h3>
-          <p>Centuries old and still going — local produce, crafts, and familiar faces in the market square every Monday.</p>
+          <p>Centuries old and still going. Local produce, crafts, and familiar faces in the market square every Monday morning.</p>
         </article>
         <article class="explore-card">
           <h3>River Stour Walks</h3>
-          <p>Step out of town onto footpaths through the Blackmore Vale. Some of the best walking in Dorset, starting right here.</p>
+          <p>Step out of town straight onto footpaths through the Blackmore Vale. Some of the best walking in Dorset, right on the doorstep.</p>
         </article>
         <article class="explore-card">
           <h3>Thomas Hardy's House</h3>
-          <p>Hardy lived and wrote here from 1876–78. His former home is preserved and open as a local landmark.</p>
+          <p>Hardy lived and wrote here from 1876–78, describing them as his happiest years. His former home is preserved as a local landmark.</p>
         </article>
         <article class="explore-card">
-          <h3>Year-round events</h3>
-          <p>From the Cheese Festival to seasonal fairs and live music — Sturminster Newton's calendar stays busy throughout the year.</p>
+          <h3>Events year-round</h3>
+          <p>From the Cheese Festival to seasonal fairs and live music — Sturminster Newton's calendar stays fuller than most towns this size.</p>
         </article>
       </div>
     </div>
@@ -175,10 +194,10 @@
   <!-- VISIT -->
   <section id="visit">
     <div class="container visit-grid">
-      <div>
-        <p class="label">Opening hours</p>
+      <div class="visit-hours">
+        <p class="kicker">Opening hours</p>
         <h2>Come and see us</h2>
-        <table class="hours">
+        <table class="hours-table">
           <tr><td>Monday</td><td>Please call ahead</td></tr>
           <tr><td>Tuesday</td><td>Please call ahead</td></tr>
           <tr><td>Wednesday</td><td>Please call ahead</td></tr>
@@ -187,35 +206,29 @@
           <tr><td>Saturday</td><td>Please call ahead</td></tr>
           <tr><td>Sunday</td><td>Please call ahead</td></tr>
         </table>
-        <p class="hours-note">For confirmed times check our website or give us a call.</p>
+        <p class="hours-note">For confirmed times, check our website or give us a call.</p>
       </div>
-      <div>
-        <p class="label">Find us</p>
-        <h2>Get in touch</h2>
-        <ul class="contact">
-          <li>
-            <span class="contact-label">Address</span>
-            <span>Joshua's Coffee Shop<br/>Sturminster Newton, Dorset</span>
-          </li>
-          <li>
-            <span class="contact-label">Online</span>
-            <span><a href="https://joshuascoffeeshop.co.uk" target="_blank" rel="noopener">joshuascoffeeshop.co.uk</a></span>
-          </li>
-          <li>
-            <span class="contact-label">WiFi</span>
-            <span>Free throughout — ask staff for the password</span>
-          </li>
-        </ul>
+      <div class="visit-contact">
+        <p class="kicker">Get in touch</p>
+        <h2>Find us</h2>
+        <dl class="contact-list">
+          <dt>Address</dt>
+          <dd>Joshua's Coffee Shop<br/>Sturminster Newton, Dorset</dd>
+          <dt>Website</dt>
+          <dd><a href="https://joshuascoffeeshop.co.uk" target="_blank" rel="noopener">joshuascoffeeshop.co.uk</a></dd>
+          <dt>WiFi</dt>
+          <dd>Free throughout — ask staff for the password</dd>
+        </dl>
       </div>
     </div>
   </section>
 
   <!-- MAP -->
-  <div class="map-wrap">
+  <div class="map-block">
     <iframe
-      title="Joshua's Coffee Shop location in Sturminster Newton"
+      title="Joshua's Coffee Shop, Sturminster Newton"
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2527.8!2d-2.3063!3d50.9268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4872b20000000001%3A0x1!2sSturminster%20Newton%2C%20Dorset%20DT10!5e0!3m2!1sen!2suk!4v1"
-      width="100%" height="400" style="border:0;display:block;"
+      width="100%" height="420" style="border:0;display:block;"
       allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
     </iframe>
   </div>
@@ -223,9 +236,9 @@
   <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
-      <div class="footer-brand">
+      <div>
         <p class="footer-name">Joshua's Coffee Shop</p>
-        <p>Sturminster Newton &middot; Dorset</p>
+        <p class="footer-place">Sturminster Newton &middot; Dorset</p>
       </div>
       <nav class="footer-nav">
         <a href="#menu">Menu</a>
