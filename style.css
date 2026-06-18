@@ -390,7 +390,7 @@ footer {
   color: rgba(245,242,238,0.9);
   margin-bottom: 3px;
 }
-.footer-place { font-size: 0.78rem; color: rgba(245,242,238,0.3); letter-spacing: 0.06em; }
+.footer-place { font-size: 0.78rem; color: rgba(245,242,238,0.65); letter-spacing: 0.06em; }
 .footer-nav { display: flex; gap: 28px; }
 .footer-nav a {
   font-size: 0.72rem;
@@ -401,7 +401,7 @@ footer {
   transition: color 0.15s;
 }
 .footer-nav a:hover { color: rgba(245,242,238,1); }
-.footer-copy { font-size: 0.7rem; color: rgba(245,242,238,0.18); }
+.footer-copy { font-size: 0.7rem; color: rgba(245,242,238,0.55); }
 
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 860px) {
