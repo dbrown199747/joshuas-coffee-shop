@@ -46,6 +46,7 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
   position: fixed;
   inset: 0 0 auto 0;
   z-index: 100;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0) 100%);
   transition: background 0.25s, border-color 0.25s;
   border-bottom: 1px solid transparent;
 }
@@ -65,30 +66,32 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
 .nav-logo {
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--ink);
-  opacity: 0;
-  transition: opacity 0.25s;
+  color: rgba(255,255,255,0.9);
+  transition: color 0.25s, opacity 0.25s;
 }
-#nav.solid .nav-logo { opacity: 1; }
+#nav.solid .nav-logo { color: var(--ink); }
 .nav-links { display: flex; gap: 32px; }
 .nav-links a {
   font-size: 0.78rem;
   font-weight: 500;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--mid);
+  color: rgba(255,255,255,0.75);
   transition: color 0.15s;
 }
-.nav-links a:hover { color: var(--ink); }
-.nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--ink); }
+.nav-links a:hover { color: rgba(255,255,255,1); }
+#nav.solid .nav-links a { color: var(--mid); }
+#nav.solid .nav-links a:hover { color: var(--ink); }
+.nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--white); }
+#nav.solid .nav-toggle { color: var(--ink); }
 
 /* ── HERO ────────────────────────────────────────────── */
 #top { background: var(--white); }
 
 .hero-photo {
   width: 100%;
-  height: 88vh;
-  min-height: 480px;
+  height: 58vh;
+  min-height: 340px;
   overflow: hidden;
 }
 .hero-photo img {
@@ -290,7 +293,7 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
 
 /* ── EXPLORE ─────────────────────────────────────────── */
 #explore {
-  background: var(--red);
+  background: var(--ink);
   padding: 88px 0;
 }
 
@@ -400,10 +403,10 @@ footer {
   font-weight: 500;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: rgba(245,242,238,0.3);
+  color: rgba(245,242,238,0.65);
   transition: color 0.15s;
 }
-.footer-nav a:hover { color: rgba(245,242,238,0.8); }
+.footer-nav a:hover { color: rgba(245,242,238,1); }
 .footer-copy { font-size: 0.7rem; color: rgba(245,242,238,0.18); }
 
 /* ── RESPONSIVE ──────────────────────────────────────── */
@@ -420,6 +423,8 @@ footer {
     padding: 20px 24px;
     gap: 16px;
   }
+  .nav-links.open a { color: var(--mid); }
+  .nav-links.open a:hover { color: var(--ink); }
   .nav-toggle { display: block; }
 
   .hero-photo { height: 60vw; min-height: 280px; }
