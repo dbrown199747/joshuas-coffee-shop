@@ -6,7 +6,7 @@
   <title>Joshua's Coffee Shop — Sturminster Newton, Dorset</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&family=Playfair+Display:wght@600&family=Inter:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -14,7 +14,10 @@
   <!-- NAV -->
   <header id="nav">
     <div class="nav-inner">
-      <a class="nav-logo" href="#top">Joshua's</a>
+      <a class="nav-logo" href="#top" aria-label="Joshua's Coffee Shop — home">
+        <span class="logo-wordmark">Joshua's</span>
+        <span class="logo-descriptor">Coffee Shop</span>
+      </a>
       <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
       <nav class="nav-links">
         <a href="#menu">Menu</a>
