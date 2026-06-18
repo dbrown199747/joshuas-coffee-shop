@@ -330,7 +330,7 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
   border-color: rgba(255,255,255,0.18);
 }
 .explore-card--lead:hover { background: rgba(255,255,255,0.14); }
-.explore-card--lead h3 { color: var(--white); font-weight: 700; }
+.explore-card--lead h3 { color: var(--white); font-weight: 500; }
 .explore-card--lead p { color: rgba(245,242,238,0.65); }
 .explore-freq {
   font-size: 0.66rem;
