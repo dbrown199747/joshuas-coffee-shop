@@ -431,8 +431,11 @@ footer {
     padding: 20px 20px;
     gap: 16px;
   }
-  .nav-links.open a { color: var(--mid); display: inline; }
+  .nav-links.open a { color: var(--mid); border-bottom: none; font-size: 1rem; }
   .nav-links.open a:hover { color: var(--ink); }
+  .nav-links.open a.active { color: var(--ink); border-bottom: none; border-left: 2px solid var(--red); padding-left: 10px; }
+  .nav-logo-img { height: 48px; }
+  .nav-toggle { font-size: 1.7rem; }
   .nav-toggle { display: block; }
 
   /* Hero */

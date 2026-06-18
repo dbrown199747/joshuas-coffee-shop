@@ -9,8 +9,16 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('solid', window.scrollY > 60);
 }, { passive: true });
 
-toggle.addEventListener('click', () => links.classList.toggle('open'));
-navAnchors.forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+toggle.addEventListener('click', () => {
+  const isOpen = links.classList.toggle('open');
+  toggle.innerHTML = isOpen ? '&#10005;' : '&#9776;';
+  toggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+});
+navAnchors.forEach(a => a.addEventListener('click', () => {
+  links.classList.remove('open');
+  toggle.innerHTML = '&#9776;';
+  toggle.setAttribute('aria-label', 'Open menu');
+}));
 
 // Highlight nav link for current section
 const sections = document.querySelectorAll('section[id], div[id]');
