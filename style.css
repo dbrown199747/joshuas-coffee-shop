@@ -419,6 +419,7 @@ footer {
 /* ── RESPONSIVE ──────────────────────────────────────── */
 @media (max-width: 860px) {
   .container { padding: 0 20px; }
+  .nav-inner { padding: 0 20px; }
 
   /* Nav */
   .nav-links { display: none; flex-direction: column; }
