@@ -431,7 +431,7 @@ footer {
     padding: 20px 20px;
     gap: 16px;
   }
-  .nav-links.open a { color: var(--mid); }
+  .nav-links.open a { color: var(--mid); display: inline; }
   .nav-links.open a:hover { color: var(--ink); }
   .nav-toggle { display: block; }
 
