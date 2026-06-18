@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 148" role="img" aria-label="Joshua's Coffee Shop">
+  <!-- EST. DORSET cap line with flanking rules -->
+  <line x1="10" y1="18" x2="118" y2="18" stroke="#d3cbbd" stroke-width="1"/>
+  <text x="190" y="23" font-family="Inter, sans-serif" font-size="11" font-weight="400" letter-spacing="3.74" fill="#b24a35" text-anchor="middle">EST. DORSET</text>
+  <line x1="262" y1="18" x2="370" y2="18" stroke="#d3cbbd" stroke-width="1"/>
+
+  <!-- Wordmark: Joshua's -->
+  <text x="190" y="101" font-family="'Playfair Display', serif" font-size="72" font-weight="600" fill="#1c1814" text-anchor="middle">Joshua's</text>
+
+  <!-- Descriptor: COFFEE SHOP -->
+  <text x="196" y="132" font-family="Inter, sans-serif" font-size="14.5" font-weight="400" letter-spacing="6.09" fill="#1c1814" text-anchor="middle">COFFEE SHOP</text>
+</svg>

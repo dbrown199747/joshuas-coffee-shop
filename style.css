@@ -53,36 +53,22 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 36px;
-  height: 58px;
+  height: 68px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 .nav-logo {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1px;
-  line-height: 1;
+  align-items: center;
   opacity: 1;
+  transition: opacity 0.15s;
 }
-.nav-logo:hover { opacity: 0.8; }
-.logo-wordmark {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: var(--ink);
-  letter-spacing: normal;
-  line-height: 1;
-}
-.logo-descriptor {
-  font-family: 'Inter', sans-serif;
-  font-size: 0.54rem;
-  font-weight: 400;
-  letter-spacing: 0.42em;
-  text-transform: uppercase;
-  color: var(--ink);
-  padding-left: 0.42em;
+.nav-logo:hover { opacity: 0.75; }
+.nav-logo-img {
+  height: 48px;
+  width: auto;
+  display: block;
 }
 .nav-links { display: flex; gap: 32px; }
 .nav-links a {
@@ -102,7 +88,7 @@ h3 { font-size: 1.15rem; font-weight: 600; line-height: 1.2; margin-bottom: 0.5r
 .nav-toggle { display: none; background: none; border: none; font-size: 1.4rem; cursor: pointer; color: var(--ink); }
 
 /* ── HERO ────────────────────────────────────────────── */
-#top { background: var(--white); padding-top: 58px; }
+#top { background: var(--white); padding-top: 68px; }
 
 .hero-photo {
   width: 100%;
@@ -437,7 +423,7 @@ footer {
   .nav-links.open {
     display: flex;
     position: absolute;
-    top: 58px; left: 0; right: 0;
+    top: 68px; left: 0; right: 0;
     background: var(--white);
     border-bottom: 1px solid var(--rule);
     padding: 20px 24px;
